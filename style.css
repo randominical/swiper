@@ -64,3 +64,10 @@ body {
     color: #fff;
     font-size: 80px;
 }
+.image-slider .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #fff;
+}
