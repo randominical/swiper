@@ -7,7 +7,9 @@ new Swiper('.image-slider',{
     //пагинация
     pagination: {
         el: '.swiper-pagination',
-        //буллеты
+        //буллеты (точки)
         clickable: true,
+        //динамические буллеты
+        dynamicBullets: true,
     },
 });
