@@ -71,7 +71,9 @@ new Swiper('.image-slider',{
    //автовысота
    autoHeight: true,
    //количество слайдов для показа (целые числа или доли, либо 'auto')
-   slidesPerView: 'auto',
+   slidesPerView: 3,
    //отключение функционала слайдера, если число слайдов меньше, чем требует прокрутки
    watchOverflow: true,
+   //отступ между слайдами
+   spaceBetween: 30,
 });
