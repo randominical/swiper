@@ -59,7 +59,7 @@ new Swiper('.image-slider',{
         //Включить/выключить управление клавишами pageUP, pageDown
         pageUpDown: true,
     },
-    /*
+    
     //Управление колесом мыши
     mousewheel: {
         //Чувствительность колеса мыши
@@ -67,7 +67,7 @@ new Swiper('.image-slider',{
         //Класс объекта, на котором будет срабатывать прокрутка мышью
         //eventsTarget: ".image-slider"
     },
-    */
+    
    //автовысота
    autoHeight: false,
    //количество слайдов для показа (целые числа или доли, либо 'auto')
@@ -97,6 +97,10 @@ new Swiper('.image-slider',{
        //закончить на последнем слайде
        stopOnLastSlide: true,
        //отключить после ручного переключения
-       disableOnInteraction: false,
-   }
+       disableOnInteraction: false
+   },
+   //скорость прокрутки
+   speed: 800,
+   //вертикальный слайдер (в сочетании с freeMode: true, и возможностью прокрутки колесом мыши получаем блок с кастомным скроллом)
+   direction: 'vertical',
 });
