@@ -17,7 +17,7 @@ new Swiper('.image-slider',{
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         },
         */
-       /*
+       //Фракция
        type: 'fraction',
        //кастомный вывод фракции
        renderFraction: function (currentClass, totalClass) {
@@ -25,7 +25,14 @@ new Swiper('.image-slider',{
             ' из ' +
             '<span class="' + totalClass + '"></span>';
        },
-       */
+      /*
       type: 'progressbar',
+      */
+    },
+    //Скролл
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        //Возможность перетаскивать скролл
+        draggable: true,
     },
 });

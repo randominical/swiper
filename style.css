@@ -80,3 +80,8 @@ body {
 .image-slider .swiper-pagination-progressbar-fill {
     background-color: #7a956b;
 }
+/*Скролл*/
+.image-slider .swiper-scrollbar-drag {
+    cursor: pointer;
+    background-color:  #7a956b;
+}
