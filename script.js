@@ -17,6 +17,7 @@ new Swiper('.image-slider',{
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         },
         */
+       /*
        type: 'fraction',
        //кастомный вывод фракции
        renderFraction: function (currentClass, totalClass) {
@@ -24,5 +25,7 @@ new Swiper('.image-slider',{
             ' из ' +
             '<span class="' + totalClass + '"></span>';
        },
+       */
+      type: 'progressbar',
     },
 });

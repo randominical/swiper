@@ -76,3 +76,7 @@ body {
     font-size: 20px;
     color: #fff;
 }
+/*Прогрессбар*/
+.image-slider .swiper-pagination-progressbar-fill {
+    background-color: #7a956b;
+}
