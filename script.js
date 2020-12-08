@@ -107,11 +107,21 @@ new Swiper('.image-slider',{
    //по умолчанию: листание
    //effect: 'slide',
    //эффекты переключения слайда
-   //смена прозрачности
+   /*//смена прозрачности
    effect: 'fade',
    //дополнение к fade
    fadeEffect: {
        //параллельная смена прозрачности
        crossFade: true
+   }*/
+   //эффекты переключения слайда
+   //переворот
+   effect: 'flip',
+   //дополнение к flip
+   flipEffect: {
+       //тень
+       slideShadows: true,
+       //показ только активного слайда
+       limitRotation: true
    }
 });
