@@ -50,4 +50,13 @@ new Swiper('.image-slider',{
         //Отслеживание состояния
         watchState: true,
     },
+    //Управление клавиатурой
+    keyboard: {
+        //Включить/выключить
+        enabled: true,
+        //Включить/выключить только когда слайдер в пределах вьюпорта
+        onlyInViewport: true,
+        //Включить/выключить управление клавишами pageUP, pageDown
+        pageUpDown: true,
+    }
 });
