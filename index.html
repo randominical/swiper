@@ -16,7 +16,8 @@
             <div class="image-slider__wrapper swiper-wrapper">
                 <!--Хеш-навигация data-hash--> 
                 <div data-hash="slide-1" class="image-slider__slide swiper-slide">
-                    <div class="image-slider__image">
+                    <!--swiper-zoom-container для возможности увеличения-->
+                    <div class="image-slider__image swiper-zoom-container">
                         <!--Ленивая загрузка: data-src, src="img/1x1.png" class="swiper-lazy", swiper-lazy-preloader-->
                         <img data-src="img/01.jpg" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
                         <div class="swiper-lazy-preloader"></div>
@@ -60,7 +61,7 @@
             <div class="swiper-pagination"></div>
             <!--скроллбар-->
             <div class="swiper-scrollbar"></div>
-            <!--https://youtu.be/ddbxsrGPRY0?t=601-->
+            <!--https://youtu.be/ddbxsrGPRY0-->
         </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

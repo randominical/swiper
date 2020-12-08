@@ -186,4 +186,11 @@ new Swiper('.image-slider',{
     watchSlidesProgress: true,
     //добавление класса видимым слайдам
     watchSlidesVisibility: true,
+    //zoom картинки (чтобы открыть в отдельном окне, нужны доп.плагины)
+    zoom: {
+        //максимальное увеличение
+        maxRatio: 5,
+        //минимальное увеличение
+        minRatio: 1,
+    },
 });
