@@ -43,4 +43,6 @@ new Swiper('.image-slider',{
     touchAngle: 45,
     //Курсор перетаскивания
     grabCursor: true,
+    //Переключение при клике на слайд
+    slideToClickedSlide: true,
 });
