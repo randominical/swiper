@@ -43,7 +43,7 @@ new Swiper('.image-slider',{
     touchAngle: 45,
     //Курсор перетаскивания
     grabCursor: true,
-    //Переключение при клике на слайд
+    //Переключение при клике на слайд (когда отображается несколько слайдов одновременно)
     slideToClickedSlide: true,
     //Навигация по хешу
     hashNavigation: {
@@ -70,4 +70,8 @@ new Swiper('.image-slider',{
     */
    //автовысота
    autoHeight: true,
+   //количество слайдов для показа (целые числа или доли, либо 'auto')
+   slidesPerView: 'auto',
+   //отключение функционала слайдера, если число слайдов меньше, чем требует прокрутки
+   watchOverflow: true,
 });
