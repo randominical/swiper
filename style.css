@@ -50,9 +50,9 @@ body {
     /*padding: 30px 0 70px 0;*/
     /*мультирядность
     height: 700px;*/
-    /*вертикальный слайдер*/
+    /*вертикальный слайдер
     padding: 0;
-    height: 700px;
+    height: 700px;*/
 }
 .image-slider .swiper-slide {
     /*мультирядность
@@ -65,13 +65,13 @@ body {
 }
 .image-slider__image {
     text-align: center;
-    /*вертикальный слайдер*/
-    height: 100%;
+    /*вертикальный слайдер
+    height: 100%;*/
 }
 .image-slider__image img {
-    /*max-width: 100%;*/
-    /*вертикальный слайдер*/
-    height: 100%;
+    max-width: 100%;
+    /*вертикальный слайдер
+    height: 100%;*/
 }
 .image-slider .swiper-button-prev::after,
 .image-slider .swiper-button-next::after {

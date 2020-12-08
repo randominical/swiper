@@ -59,7 +59,7 @@ new Swiper('.image-slider',{
         //Включить/выключить управление клавишами pageUP, pageDown
         pageUpDown: true,
     },
-    
+    /*
     //Управление колесом мыши
     mousewheel: {
         //Чувствительность колеса мыши
@@ -67,11 +67,11 @@ new Swiper('.image-slider',{
         //Класс объекта, на котором будет срабатывать прокрутка мышью
         //eventsTarget: ".image-slider"
     },
-    
+    */
    //автовысота
    autoHeight: false,
    //количество слайдов для показа (целые числа или доли, либо 'auto')
-   slidesPerView: 2,
+   slidesPerView: 1,
    //отключение функционала слайдера, если число слайдов меньше, чем требует прокрутки
    watchOverflow: true,
    //отступ между слайдами
@@ -89,7 +89,7 @@ new Swiper('.image-slider',{
    //количество дублирующих слайдов (необходимо, если slidesPerView: 'auto',)
    //loopedSlides: 3,
    //свободный режим (перетаскивание и свайп слайдов без фиксированных позиций)
-   freeMode: true,
+   freeMode: false,
    //автопрокрутка
    autoplay: {
        //пауза между прокруткой
@@ -100,7 +100,18 @@ new Swiper('.image-slider',{
        disableOnInteraction: false
    },
    //скорость прокрутки
-   speed: 800,
+   speed: 500,
    //вертикальный слайдер (в сочетании с freeMode: true, и возможностью прокрутки колесом мыши получаем блок с кастомным скроллом)
-   direction: 'vertical',
+   //direction: 'vertical',
+   //эффекты переключения слайда
+   //по умолчанию: листание
+   //effect: 'slide',
+   //эффекты переключения слайда
+   //смена прозрачности
+   effect: 'fade',
+   //дополнение к fade
+   fadeEffect: {
+       //параллельная смена прозрачности
+       crossFade: true
+   }
 });
