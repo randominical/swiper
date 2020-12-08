@@ -77,5 +77,7 @@ new Swiper('.image-slider',{
    //отступ между слайдами
    spaceBetween: 30,
    //количество пролистываемых слайдов
-   slidesPerGroup: 3,
+   slidesPerGroup: 1,
+   //активный слайд по центру
+    centeredSlides: true,
 });
