@@ -69,9 +69,9 @@ new Swiper('.image-slider',{
     },
     */
    //автовысота
-   autoHeight: true,
+   autoHeight: false,
    //количество слайдов для показа (целые числа или доли, либо 'auto')
-   slidesPerView: 3,
+   slidesPerView: 2,
    //отключение функционала слайдера, если число слайдов меньше, чем требует прокрутки
    watchOverflow: true,
    //отступ между слайдами
@@ -79,5 +79,9 @@ new Swiper('.image-slider',{
    //количество пролистываемых слайдов
    slidesPerGroup: 1,
    //активный слайд по центру
-    centeredSlides: true,
+   centeredSlides: false,
+   //стартовый слайд (первый: 0)
+   initialSlide: 0,
+   //мультирядность (необходимо отключить автовысоту)
+   slidesPerColumn: 2,
 });
