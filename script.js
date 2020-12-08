@@ -76,4 +76,6 @@ new Swiper('.image-slider',{
    watchOverflow: true,
    //отступ между слайдами
    spaceBetween: 30,
+   //количество пролистываемых слайдов
+   slidesPerGroup: 3,
 });
