@@ -113,8 +113,8 @@ new Swiper('.image-slider',{
    fadeEffect: {
        //параллельная смена прозрачности
        crossFade: true
-   }*/
-   //эффекты переключения слайда
+   },*/
+   /*//эффекты переключения слайда
    //переворот
    effect: 'flip',
    //дополнение к flip
@@ -123,5 +123,16 @@ new Swiper('.image-slider',{
        slideShadows: true,
        //показ только активного слайда
        limitRotation: true
-   }
+   },*/
+   //эффекты переключения слайда
+   //куб
+   effect: 'cube',
+   //дополнение к cube
+   cubeEffect: {
+       //тень
+       slideShadows: true,
+       shadow: true,
+       shadowOffset: 20,
+       shadowScale: 0.94,
+   },
 });

@@ -53,6 +53,8 @@ body {
     /*вертикальный слайдер
     padding: 0;
     height: 700px;*/
+    /*эффект куб*/
+    width: 500px
 }
 .image-slider .swiper-slide {
     /*мультирядность
