@@ -58,5 +58,14 @@ new Swiper('.image-slider',{
         onlyInViewport: true,
         //Включить/выключить управление клавишами pageUP, pageDown
         pageUpDown: true,
-    }
+    },
+    /*
+    //Управление колесом мыши
+    mousewheel: {
+        //Чувствительность колеса мыши
+        sensitivity: 1,
+        //Класс объекта, на котором будет срабатывать прокрутка мышью
+        //eventsTarget: ".image-slider"
+    },
+    */
 });
