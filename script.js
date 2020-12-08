@@ -83,5 +83,9 @@ new Swiper('.image-slider',{
    //стартовый слайд (первый: 0)
    initialSlide: 0,
    //мультирядность (необходимо отключить автовысоту)
-   slidesPerColumn: 2,
+   //slidesPerColumn: 2,
+   //бесконечный слайдер (отключить сролл и мультирядность)
+   loop: true,
+   //количество дублирующих слайдов (необходимо, если slidesPerView: 'auto',)
+   //loopedSlides: 3,
 });
