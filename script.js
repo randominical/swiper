@@ -45,4 +45,9 @@ new Swiper('.image-slider',{
     grabCursor: true,
     //Переключение при клике на слайд
     slideToClickedSlide: true,
+    //Навигация по хешу
+    hashNavigation: {
+        //Отслеживание состояния
+        watchState: true,
+    },
 });
