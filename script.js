@@ -172,4 +172,18 @@ new Swiper('.image-slider',{
             slidesPerView: 3,
         },
     },*/
+    //ленивая загрузка
+    //отключить предзагрузку картинок
+    preloadImages: false,
+    //подгрузка картинок
+    lazy: {
+        //подгружать на старте переключения слайда
+        loadOnTransitionStart: true,
+        //подгрузить предыдущую и следующую картинку
+        loadPrevNext: true,
+    },
+    //слежка за видимыми слайдами (полезно, если slidesPerView: 'auto', или > 1)
+    watchSlidesProgress: true,
+    //добавление класса видимым слайдам
+    watchSlidesVisibility: true,
 });
