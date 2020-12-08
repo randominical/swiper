@@ -90,4 +90,13 @@ new Swiper('.image-slider',{
    //loopedSlides: 3,
    //свободный режим (перетаскивание и свайп слайдов без фиксированных позиций)
    freeMode: true,
+   //автопрокрутка
+   autoplay: {
+       //пауза между прокруткой
+       delay: 1000,
+       //закончить на последнем слайде
+       stopOnLastSlide: true,
+       //отключить после ручного переключения
+       disableOnInteraction: false,
+   }
 });
