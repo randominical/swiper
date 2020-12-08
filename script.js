@@ -68,4 +68,6 @@ new Swiper('.image-slider',{
         //eventsTarget: ".image-slider"
     },
     */
+   //автовысота
+   autoHeight: true,
 });
