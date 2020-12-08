@@ -71,7 +71,7 @@ new Swiper('.image-slider',{
    //автовысота
    autoHeight: false,
    //количество слайдов для показа (целые числа или доли, либо 'auto')
-   slidesPerView: 1,
+   slidesPerView: 3,
    //отключение функционала слайдера, если число слайдов меньше, чем требует прокрутки
    watchOverflow: true,
    //отступ между слайдами
@@ -124,7 +124,7 @@ new Swiper('.image-slider',{
        //показ только активного слайда
        limitRotation: true
    },*/
-   //эффекты переключения слайда
+   /*//эффекты переключения слайда
    //куб
    effect: 'cube',
    //дополнение к cube
@@ -134,5 +134,17 @@ new Swiper('.image-slider',{
        shadow: true,
        shadowOffset: 20,
        shadowScale: 0.94,
+   },*/
+   //эффекты переключения слайда
+   //поток
+   effect: 'coverflow',
+   //дополнение к coverflow
+   coverflowEffect: {
+       //угол
+       rotate: 20,
+       //наложение
+       stretch: 50,
+       //тень
+       slideShadows: true,
    },
 });
