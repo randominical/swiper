@@ -118,3 +118,26 @@ body {
 .image-in-slider__image img {
     max-width: 100%;
 }
+/*Текстовый слайдер*/
+.text {
+    font-size: 25px;
+    line-height: 150%;
+    color: #fff;
+    margin: 50px 0;
+    background-color: #77608d;
+    padding: 10px;
+}
+.text-slider {
+}
+.text-slider__wrapper {
+}
+.text-slider__slide {
+    font-size: 25px;
+    line-height: 150%;
+    color: #fff;
+}
+.text-slider__slide h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}

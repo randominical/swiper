@@ -1,4 +1,5 @@
-new Swiper('.image-slider',{
+//присвоение переменной для синхронизации двух слайдеров
+let myImageSlider = new Swiper('.image-slider',{
     //стрелки
     navigation: {
         nextEl: '.swiper-button-next',
@@ -208,3 +209,13 @@ new Swiper('.image-in-slider', {
     //корректная работа навигации дочернего слайда без влияния на родительский
     nested: true,
 });
+//текстовый слайдер
+let myTextSlider = new Swiper('.text-slider', {
+    //количество слайдов для показа
+    slidesPerView: 3,
+    //отступ между слайдами
+    spaceBetween: 30,
+})
+//передача управления слайдеров друг другу
+myImageSlider.controller.control = myTextSlider;
+myTextSlider.controller.control = myImageSlider;
