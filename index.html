@@ -24,9 +24,50 @@
                     </div>
                 </div>
                 <div data-hash="slide-2" class="image-slider__slide swiper-slide">
-                    <div class="image-slider__image">
-                        <img data-src="img/02.jpg" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
-                        <div class="swiper-lazy-preloader"></div>
+                    <div class="image-in-slider swiper-container">
+                        <div class="image-in-slider__wrapper swiper-wrapper">
+                            <!--Хеш-навигация data-hash--> 
+                            <div data-hash="slide-1" class="image-in-slider__slide swiper-slide">
+                                <!--swiper-zoom-container для возможности увеличения-->
+                                <div class="image-in-slider__image swiper-zoom-container">
+                                    <!--Ленивая загрузка: data-src, src="img/1x1.png" class="swiper-lazy", swiper-lazy-preloader-->
+                                    <img data-src="img/01.jpg" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div data-hash="slide-2" class="image-in-slider__slide swiper-slide">
+                                <div class="image-in-slider__image">
+                                    <img data-src="img/02.jpg" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div data-hash="slide-3" class="image-in-slider__slide swiper-slide">
+                                <div class="image-in-slider__image">
+                                    <img data-src="img/03.jpg" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div data-hash="slide-4" class="image-in-slider__slide swiper-slide">
+                                <div class="image-in-slider__image">
+                                    <img data-src="img/04.jpg" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div data-hash="slide-5" class="image-in-slider__slide swiper-slide">
+                                <div class="image-in-slider__image">
+                                    <img data-src="img/05.jpg" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div data-hash="slide-6" class="image-in-slider__slide swiper-slide">
+                                <div class="image-in-slider__image">
+                                    <img data-src="img/06.jpg" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                        </div>
+                                    <!--пагинация-->
+            <div class="swiper-pagination"></div>
                     </div>
                 </div>
                 <div data-hash="slide-3" class="image-slider__slide swiper-slide">
@@ -57,8 +98,6 @@
             <!--стрелки-->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-            <!--пагинация-->
-            <div class="swiper-pagination"></div>
             <!--скроллбар-->
             <div class="swiper-scrollbar"></div>
             <!--https://youtu.be/ddbxsrGPRY0-->

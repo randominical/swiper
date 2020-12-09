@@ -4,7 +4,7 @@ new Swiper('.image-slider',{
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
-    //пагинация
+   /* //пагинация
     pagination: {
         el: '.swiper-pagination',
         /*
@@ -17,18 +17,18 @@ new Swiper('.image-slider',{
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         },
         */
-       //Фракция
+       /*//Фракция
        type: 'fraction',
        //кастомный вывод фракции
        renderFraction: function (currentClass, totalClass) {
            return 'Фото <span class="' + currentClass + '"></span>' +
             ' из ' +
             '<span class="' + totalClass + '"></span>';
-       },
+       },*/
       /*
       type: 'progressbar',
-      */
-    },
+      *//*
+    },*/
     //Скролл
     scrollbar: {
         el: '.swiper-scrollbar',
@@ -44,7 +44,7 @@ new Swiper('.image-slider',{
     //Курсор перетаскивания
     grabCursor: true,
     //Переключение при клике на слайд (когда отображается несколько слайдов одновременно)
-    slideToClickedSlide: true,
+    slideToClickedSlide: false,
     //Навигация по хешу
     hashNavigation: {
         //Отслеживание состояния
@@ -90,7 +90,7 @@ new Swiper('.image-slider',{
     //loopedSlides: 3,
     //свободный режим (перетаскивание и свайп слайдов без фиксированных позиций)
     freeMode: false,
-    //автопрокрутка
+    /*//автопрокрутка
     autoplay: {
         //пауза между прокруткой
         delay: 1000,
@@ -98,7 +98,7 @@ new Swiper('.image-slider',{
         stopOnLastSlide: true,
         //отключить после ручного переключения
         disableOnInteraction: false
-    },
+    },*/
     //скорость прокрутки
     speed: 500,
     //вертикальный слайдер (в сочетании с freeMode: true, и возможностью прокрутки колесом мыши получаем блок с кастомным скроллом)
@@ -193,4 +193,18 @@ new Swiper('.image-slider',{
         //минимальное увеличение
         minRatio: 1,
     },
+});
+
+//слайдер в слайдере
+new Swiper('.image-in-slider', {
+    //курсор перетаскивания
+    grabCursor: true,
+    //навигация: пагинация, текущее положение, прогрессбар
+    pagination: {
+        el: '.swiper-pagination',
+        //буллеты
+        clickable: true,
+    },
+    //корректная работа навигации дочернего слайда без влияния на родительский
+    nested: true,
 });
