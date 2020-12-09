@@ -228,3 +228,16 @@ let myTextSlider = new Swiper('.text-slider', {
 //передача управления слайдеров друг другу
 myImageSlider.controller.control = myTextSlider;
 myTextSlider.controller.control = myImageSlider;
+
+//Параллакс слайдер
+new Swiper('.parallax-slider', {
+    //включаем параллакс
+    parallax: true,
+    //скорость переключения
+    speed: 2000,
+    //стрелки
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+});
